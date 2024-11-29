@@ -222,9 +222,11 @@ public:
         pchMessageStart[3] = 0xFA;
         nDefaultPort = 11911;
 
-        vSeeds.push_back(CDNSSeedData("1", "167.172.48.150")); // London
-        vSeeds.push_back(CDNSSeedData("2", "157.230.60.47"));   // New York
-        vSeeds.push_back(CDNSSeedData("3", "157.245.78.179")); // Amsterdam
+        vSeeds.push_back(CDNSSeedData("1", "seeds.medusacoin.info")); // Seeder
+        vSeeds.push_back(CDNSSeedData("2", "134.209.197.211"));       // Explorer
+        vSeeds.push_back(CDNSSeedData("3", "167.172.48.150"));        // London
+        vSeeds.push_back(CDNSSeedData("4", "157.230.60.47"));         // New York
+        vSeeds.push_back(CDNSSeedData("5", "157.245.78.179"));        // Amsterdam
 
         base58Prefixes[PUBKEY_ADDRESS]  = std::vector<unsigned char>(1, 50); //M
         base58Prefixes[SCRIPT_ADDRESS]  = std::vector<unsigned char>(1, 8);
